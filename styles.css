@@ -1,4 +1,4 @@
-* {
+ * {
     padding: 0;
     margin: 0;
 }
@@ -15,5 +15,136 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.profile {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 10%;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    color: #e50914;
+}
+
+.logo {
+    height: 45px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    margin: 10px;
+}
+
+.banner {
+    background-image: url("main-img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 448px;
+    color: white;
+}
+
+.banner-contents {
+    margin-left: 30px;
+    padding-top: 190px;
+    height: 190px;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner-btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.banner-btn button {
+    width: 60px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    line-height: 1.2;
+    font-size: 0.7rem;
+    margin-right: 10px;
+}
+
+.banner-btn button:hover {
+    background-color: rgb(171, 163, 163);
+    cursor: pointer;
+}
+
+.banner-description {
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.row {
+    color: white;
+}
+
+.row h2 {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.row_posters {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.row_poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 300px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row_poster:hover {
+    transform: scale(1.1);
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_posterLarge {
+    max-height: 250px;
 }
